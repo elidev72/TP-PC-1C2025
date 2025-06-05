@@ -55,13 +55,13 @@ public class Concurrente {
     }
 
     /*
-     * Multiplica dos matrices cuadradas de números enteros de forma concurrente utilizando un pool de hilos.
+     * Multiplica dos matrices cuadradas de números enteros de forma concurrente utilizando un pool de hilos
      */
     public static int[][] multiplicarMatricesConcurrente(int[][] matrizA, int[][] matrizB) {
         int iDimension = matrizA.length;
         int[][] matrizResultante = new int[iDimension][iDimension]; // Crea la matriz resultante inicializada con ceros
 
-        // Determina el número de hilos a usar. Generalmente, el número de núcleos de CPU es un buen punto de partida.
+        // Determina el número de hilos a usar.
         int iHilos = Runtime.getRuntime().availableProcessors();
         System.out.println("\nIniciando multiplicación concurrente (N=" + iDimension + ", Hilos=" + iHilos + ")...");
 
